@@ -4,14 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodLyfe</title>
-    <link rel="stylesheet" href="./dist/css/base.css">
-    <link rel="stylesheet" href="./dist/css/component.css">
-    <link rel="stylesheet" href="./dist/css/effects.css">
-    <link rel="stylesheet" href="./dist/css/globals.css">
-    <link rel="stylesheet" href="./dist/css/themes.css">
     <link rel="stylesheet" href="./dist/css/app.css">
+    <script src="./dist/script/validateform.js"></script>
+    <script src="./dist/script/app.js"></script>
 </head>
-<body class="primary">
-
+<body class="pink primary">
+<div class="min-h-screen">
+    <header class="header bg-premium transition-all duration-300 py-6x shadow-sm">
+        <div class="container flex items-center space-between">
+            <!--     Logo   -->
+            <div class="logo text-extra-bold">
+                <a href="#">Good<span class="substring">Life</span></a>
+            </div>
+            <!--    Navbar   -->
+            <div class="menu flex items-center">
+                <!--   Nav bar   -->
+                <nav class="nav">
+                    <ul class="list-links flex items-center">
+                        <li class="link-item">
+                            <a href="#">Classes</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#">Timetable</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#">Clubs</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#">Nutrition</a>
+                        </li>
+                        <li class="link-item">
+                            <a href="#">Free Trial</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--   Menu Buttons   -->
+                <div class="menu-group flex items-center">
+                    <button id="search" class="flex-row-container">Search
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="17.1267" width="8.81988" height="3" rx="1.5" transform="rotate(-44 0 17.1267)"
+                                  fill="white"/>
+                            <circle cx="12.2593" cy="7.86161" r="6.36161" stroke="white" stroke-width="3"/>
+                        </svg>
+                    </button>
+                    <button id="login" class="button light">Login</button>
+                </div>
+            </div>
+            <!--  Search   -->
+            <div class="header-search flex">
+                <div class="quick-search w-full">
+                    <div class="search-input">
+                        <input id="quick-search-input" maxlength="512"
+                               class="input-search w-full" type="text" placeholder="Ctrl+K for advanced search"
+                               aria-invalid="false" data-test="input__inner" value="">
+                    </div>
+                </div>
+            </div>
+            <!--   Login   -->
+            <div id="modal" class="modal-window">
+                <form id="form-login" class="modal-content zoom-animate" novalidate>
+                    <div class="avatar-container">
+                        <span class="close transition-color" title="Close Modal">&times;</span>
+                        <img src="./dist/assets/images/img_avatar2.png" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="form-body form-container subtext-dark">
+                        <label for="username"><b>Username</b></label>
+                        <input id="username" class="login-control" type="text" placeholder="Enter Username" name="name" minlength="2" required>
+                        <p class="text-red"></p>
+                        <label for="psw"><b>Password</b></label>
+                        <input id="psw" class="login-control" type="password" placeholder="Enter Password" name="psw" minlength="8" required>
+                        <p class="text-red"></p>
+                        <button id="submit" type="submit" class="login-btn login-control transition">Login</button>
+                        <label>
+                            <input id="remember" type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="form-footer form-container flex items-center space-between">
+                        <button id="cancel" class="cancel-btn transition">Cancel</button>
+                        <div class="flex-row-container forgot">
+                            <span>Forgot</span>
+                            <a href="#">password?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+</div>
 </body>
 </html>

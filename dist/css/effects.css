@@ -93,3 +93,18 @@ section:has(.slide-up-active) {
         transform: scale(1);
     }
 }
+/* Add Zoom Animation */
+.zoom-animate {
+    animation: animatezoom 0.6s;
+}/* Add Zoom-out Animation */
+.zoom-out-animate {
+    animation: animatezoomout 0.6s;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@keyframes animatezoomout {
+    from {transform: scale(1)}
+    to {transform: scale(0)}
+}

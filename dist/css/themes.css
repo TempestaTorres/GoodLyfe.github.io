@@ -2,6 +2,7 @@
 :root {
     --color-premium: #E43071;
     --color-hover: #BE285E;
+    --color-hover-href: #f93d6b;
     --color-dark-disabled: #D37899;
     --color-substring: #ffc1d8;
     --color-primary: #f9f0f2;
@@ -12,6 +13,7 @@
     --color-gray-light-m: #F2F3F8;
     --color-gray-light-extra: #ededed;
     --color-border-light: #f7f7fc;
+    --color-border-input: #be0633;
     --color-outline: #FFDAE7;
     --bg-primary: #eed3d8;
     --bg-header: #E43071;
@@ -21,6 +23,10 @@
     --bg-hvr-primary: rgba(190, 40, 94, 1);
     --bg-hvr-secondary: rgba(99, 8, 28, 1);
     --bg-hvr-light: rgba(249, 240, 242, 1);
-    --bg-hvr-light-dark: rgba(238, 211, 216, 1);
-    --bg-hvr-light-dask: rgba(211, 140, 155, 1);
+    --bg-hvr-light-dark: rgb(211, 140, 155);
+    --bg-hvr-light-dask: rgb(197, 105, 124);
+    --bg-footers: #fdc4d2;
+}
+.green {
+    --color-premium: green;
 }

@@ -3,10 +3,16 @@
     --max-width: 1440px;
 }
 .container {
-    max-width: calc(var(--max-width) + 32px);
+    max-width: calc(var(--max-width) + 2rem);
     margin: 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .hero {
     min-height: 100vh;
@@ -422,6 +428,9 @@
 .gap-16 {
     gap: 4rem;
 }
+.gap-19 {
+    gap: 4.75rem; /*76px*/
+}
 .gap-20 {
     gap: 5rem;
 }
@@ -701,6 +710,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+/* 25px */
+.py-6x {
+    padding-top: 1.563rem;
+    padding-bottom: 1.563rem;
+}
 /* 30px */
 .py-7 {
     padding-top: 1.875rem;
@@ -913,6 +927,7 @@
 .transition-color {
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.3s;
 }
 .transition-colors {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
