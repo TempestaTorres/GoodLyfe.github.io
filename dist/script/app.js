@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
          else if (e.target.id === "login" && e.target.textContent === "Logout") {
              e.target.textContent = "Login";
          }
+         if (e.target.id === "login-item") {
+             loginButton(e);
+         }
+         if (e.target.id === "logout-item") {
+             e.target.style.display = "none";
+             document.querySelector('#login-item').style.display = "flex";
+         }
 
     });
     // When the user clicks anywhere outside of the modal, close it
@@ -51,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     // Form validation
     validateForm(formLogin);
+
+    // Hamburger
+    hamburgerHandler();
     window.addEventListener("scroll", (e) => {
 
     });

@@ -1,0 +1,98 @@
+/* 1200 - 1439px;*/
+@media screen and (max-width: 1439px) {
+    :root {
+        --max-width: 1200px;
+    }
+    .link-item a,  #search {
+        padding: 0.938rem 1.25rem 0.938rem 1.25rem;
+    }
+    .menu-group {
+        gap: 1.25rem; /*20px;*/
+    }
+}
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+    :root {
+        --max-width: 1024px;
+    }
+
+    .link-item a,  #search {
+        padding: 0.938rem 1rem 0.938rem 1rem;
+    }
+    .menu-group {
+        gap: 1rem; /*16px;*/
+    }
+}
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+    :root {
+        --max-width: 768px;
+    }
+    #login {
+        display: none;
+    }
+    .nav {
+        position: fixed;
+        z-index: 1;
+        min-height: 100vh;
+        width: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #111;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 80px;
+        transition: 0.5s;
+    }
+    .list-links {
+        flex-direction: column;
+    }
+    .link-item {
+        width: 70%;
+    }
+    .link-item a {
+        width: 100%;
+        white-space: nowrap;
+    }
+    #login-item {
+        display: flex;
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+    :root {
+        --max-width: 425px;
+    }
+    .header-search.search-active {
+        position: fixed;
+        top: 5.625rem; /*90px;*/
+    }
+    .input-search {
+        padding-top: 0.125rem;
+        padding-bottom: 0.125rem;/*2px*/
+    }
+}
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+    :root {
+        --max-width: 375px;
+    }
+    .menu-group {
+        gap: 0;
+    }
+    #search {
+        padding: 0.625rem; /*10px*/;
+    }
+}
+/* 320-374 */
+@media screen and (max-width: 374px) {
+    :root {
+        --max-width: 320px;
+    }
+    .header div:first-child {
+        flex-direction: column-reverse;
+    }
+    .menu-group {
+        gap: 8.25rem;/*132px;*/
+    }
+}

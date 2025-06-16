@@ -76,6 +76,13 @@ function validateForm(form) {
                 form.classList.remove('zoom-out-animate');
                 form.parentElement.style.display = "none";
                 buttonLogin.textContent = 'Logout';
+
+                const login = document.querySelector('#login-item');
+
+                if (login.style.display !== "none") {
+                    login.style.display = "none";
+                    document.querySelector('#logout-item').style.display = "flex";
+                }
             }, 600);
 
         }

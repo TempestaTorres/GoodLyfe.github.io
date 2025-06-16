@@ -5,6 +5,16 @@
 @import "themes.css";
 @import 'login.css';
 
+.logo {
+    padding-top: 0.188rem;
+    padding-bottom: 0.188rem;
+}
+.nav.not-active {
+    width: 0;
+}
+.nav.is-active {
+    width: 18.75rem;
+}
 .menu.menu-disabled {
     display: none;
 }
@@ -36,6 +46,12 @@
 .link-item a:hover, #search:hover {
     background-color: var(--color-hover-href);
 }
+#login-item {
+    display: none;
+}
+#logout-item {
+    display: none;
+}
 /* Header Search */
 .header-search {
     display: none;
@@ -55,4 +71,11 @@
 }
 .input-search {
     padding: 0.25rem 0 0.25rem 0.25rem;
+}
+.bracket {
+    width: 24px;
+    height: 24px;
+    & path {
+        fill: #ecf0f1;
+    }
 }

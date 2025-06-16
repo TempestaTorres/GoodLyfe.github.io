@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodLyfe</title>
     <link rel="stylesheet" href="./dist/css/app.css">
+    <link rel="stylesheet" href="./dist/css/hamburger.css">
+    <link rel="stylesheet" href="./dist/css/responsive.css">
     <script src="./dist/script/validateform.js"></script>
+    <script src="./dist/script/hamburger.js"></script>
     <script src="./dist/script/app.js"></script>
 </head>
 <body class="pink primary">
@@ -36,6 +39,21 @@
                         <li class="link-item">
                             <a href="#">Free Trial</a>
                         </li>
+                        <li class="link-item">
+                            <a href="#" id="login-item">
+                                <svg class="bracket bracket-in" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path d="M192 365.8L302 256 192 146.2l0 53.8c0 13.3-10.7 24-24 24L48 224l0 64 120 0c13.3 0 24 10.7 24 24l0 53.8zM352 256c0 11.5-4.6 22.5-12.7 30.6L223.2 402.4c-8.7 8.7-20.5 13.6-32.8 13.6c-25.6 0-46.4-20.8-46.4-46.4l0-33.6-96 0c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48l96 0 0-33.6c0-25.6 20.8-46.4 46.4-46.4c12.3 0 24.1 4.9 32.8 13.6L339.3 225.4c8.1 8.1 12.7 19.1 12.7 30.6zm-8 176l80 0c22.1 0 40-17.9 40-40l0-272c0-22.1-17.9-40-40-40l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l80 0c48.6 0 88 39.4 88 88l0 272c0 48.6-39.4 88-88 88l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/>
+                                </svg>
+                            </a>
+                            <a href="#" id="logout-item">
+                                <svg class="bracket bracket-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path d="M352 146.2L462 256 352 365.8l0-53.8c0-13.3-10.7-24-24-24l-120 0 0-64 120 0c13.3 0 24-10.7 24-24l0-53.8zM512 256c0-11.5-4.6-22.5-12.7-30.6L383.2 109.6c-8.7-8.7-20.5-13.6-32.8-13.6c-25.6 0-46.4 20.8-46.4 46.4l0 33.6-96 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0 0 33.6c0 25.6 20.8 46.4 46.4 46.4c12.3 0 24.1-4.9 32.8-13.6L499.3 286.6c8.1-8.1 12.7-19.1 12.7-30.6zM168 80c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 32C39.4 32 0 71.4 0 120L0 392c0 48.6 39.4 88 88 88l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-22.1 0-40-17.9-40-40l0-272c0-22.1 17.9-40 40-40l80 0z"/>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!--   Menu Buttons   -->
@@ -48,6 +66,13 @@
                         </svg>
                     </button>
                     <button id="login" class="button light">Login</button>
+                    <div class="hamburger-container">
+                        <div class="hamburger" id="hamburger-2">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--  Search   -->
@@ -69,10 +94,12 @@
                     </div>
                     <div class="form-body form-container subtext-dark">
                         <label for="username"><b>Username</b></label>
-                        <input id="username" class="login-control" type="text" placeholder="Enter Username" name="name" minlength="2" required>
+                        <input id="username" class="login-control" type="text" placeholder="Enter Username" name="name"
+                               minlength="2" required>
                         <p class="text-red"></p>
                         <label for="psw"><b>Password</b></label>
-                        <input id="psw" class="login-control" type="password" placeholder="Enter Password" name="psw" minlength="8" required>
+                        <input id="psw" class="login-control" type="password" placeholder="Enter Password" name="psw"
+                               minlength="8" required>
                         <p class="text-red"></p>
                         <button id="submit" type="submit" class="login-btn login-control transition">Login</button>
                         <label>
