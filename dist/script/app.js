@@ -61,6 +61,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Hamburger
     hamburgerHandler();
+
+    // Hero slider
+    const swiper = new Swiper(".hero-swiper", {
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        lazy: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+        },
+        /*
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+         */
+    });
+
+    let timerId = setInterval( () => {
+        swiper.slideNext();
+    }, 4000)
+
     window.addEventListener("scroll", (e) => {
 
     });

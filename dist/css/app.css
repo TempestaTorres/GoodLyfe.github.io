@@ -1,9 +1,10 @@
 @import "base.css";
 @import "component.css";
 @import "effects.css";
-@import "globals.css";
 @import "themes.css";
+@import "globals.css";
 @import 'login.css';
+@import 'swiper-custom.css';
 
 .logo {
     padding-top: 0.188rem;
@@ -35,12 +36,8 @@
         stroke: var(--color-primary);
     }
 }
-
 .link-item a, #search {
     padding: 0.938rem 2.375rem 0.938rem 2.375rem;
-    transition-property: color, background-color, border-color, text-decoration-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 0.3s;
     border-radius: 2.5rem;
 }
 .link-item a:hover, #search:hover {
@@ -78,4 +75,19 @@
     & path {
         fill: #ecf0f1;
     }
+}
+.img.img-bottom svg {
+    width: 100%;
+}
+/* Hero Card */
+.hero-card {
+    max-width: 50%;
+    z-index: 1;
+    left: 25%;
+    top: 33%;
+    text-align: center;
+    gap: .5rem;
+}
+.hero-card div:first-child {
+    height: 10.75rem; /*172px;*/
 }

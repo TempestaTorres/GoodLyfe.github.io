@@ -65,7 +65,7 @@ input:invalid:required {
 .login-btn {
     margin-top: 0.5rem;
     background-color: var(--bg-btn-primary);
-    font-family: var(--font-primary-semibold), 'sans-serif';
+    font-family: var(--font-primary), 'sans-serif';
     line-height: 2.313rem; /*37px*/
     color: var(--color-primary);
     border: 1px solid var(--color-premium);
@@ -75,7 +75,7 @@ input:invalid:required {
 }
 .cancel-btn {
     padding: 0 18px;
-    font-family: var(--font-primary-semibold), 'sans-serif';
+    font-family: var(--font-primary), 'sans-serif';
     line-height: 2.313rem; /*37px*/
     background-color: #f92d5f;
     border: 1px solid var(--color-premium);

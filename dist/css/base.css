@@ -36,4 +36,45 @@ a {
 svg {
     display: block;
     pointer-events: none;
+    height: auto;
+    width: auto;
+}
+img,
+video {
+    height: auto;
+    max-width: 100%;
+}
+img {
+    object-fit: cover;
+}
+
+iframe {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+td:not([align]),
+th:not([align]) {
+    text-align: inherit;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+    display: block;
+}
+input[type=checkbox],
+input[type=radio] {
+    vertical-align: baseline;
 }

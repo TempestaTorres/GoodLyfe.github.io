@@ -15,15 +15,15 @@
     --color-border-light: #f7f7fc;
     --color-border-input: #be0633;
     --color-outline: #FFDAE7;
-    --bg-primary: #eed3d8;
+    --bg-primary: #feebf0;
     --bg-header: #E43071;
     --bg-section: #f5e4e8;
     --bg-btn-primary: rgba(228, 48, 113, 1);
     --bg-btn-secondary: rgba(113, 8, 30, 1);
-    --bg-hvr-primary: rgba(190, 40, 94, 1);
+    --bg-hvr-primary: rgb(190, 40, 94);
     --bg-hvr-secondary: rgba(99, 8, 28, 1);
-    --bg-hvr-light: rgba(249, 240, 242, 1);
-    --bg-hvr-light-dark: rgb(211, 140, 155);
+    --bg-hvr-light: rgb(252, 249, 250);
+    --bg-hvr-light-dark: rgb(213, 164, 174);
     --bg-hvr-light-dask: rgb(197, 105, 124);
     --bg-footers: #fdc4d2;
 }

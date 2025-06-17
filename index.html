@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodLyfe</title>
+    <link rel="stylesheet" href="./dist/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./dist/css/app.css">
     <link rel="stylesheet" href="./dist/css/hamburger.css">
     <link rel="stylesheet" href="./dist/css/responsive.css">
+    <script src="./dist/script/swiper-bundle.min.js"></script>
     <script src="./dist/script/validateform.js"></script>
     <script src="./dist/script/hamburger.js"></script>
     <script src="./dist/script/app.js"></script>
 </head>
-<body class="pink primary">
+<body class="primary">
 <div class="min-h-screen">
     <header class="header bg-premium transition-all duration-300 py-6x shadow-sm">
         <div class="container flex items-center space-between">
             <!--     Logo   -->
             <div class="logo text-extra-bold">
-                <a href="#">Good<span class="substring">Life</span></a>
+                <a href="#">Good<span class="substring">Lyfe</span></a>
             </div>
             <!--    Navbar   -->
             <div class="menu flex items-center">
@@ -117,6 +119,51 @@
             </div>
         </div>
     </header>
+    <main>
+        <!--    Hero   -->
+        <div class="hero is-fullheight">
+                <div class="hero-container relative mt-100 w-full">
+                    <!-- Swiper -->
+                    <div class="swiper hero-swiper w-full">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/header-slide1.webp" loading="lazy" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/fit_woman_doing_a_dumbbell_lunge_in_the_gym.jpg" loading="lazy" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/lean_woman_doing_dumbbell_row.jpg" loading="lazy" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/slim-woman-doing-suspension-training-online-in-gym.jpg" loading="lazy" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/sven-women.jpg" loading="lazy" alt="slide">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./dist/assets/images/sven-woman-squoting.jpg" loading="lazy" alt="slide">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+<!--                        <div class="swiper-button-prev"></div>-->
+<!--                        <div class="swiper-button-next"></div>-->
+                    </div>
+                    <div class="img img-bottom">
+                        <svg width="1440" height="35" viewBox="0 0 1440 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0" fill="white" />
+                        </svg>
+                    </div>
+                    <!--  Hero Banner Card   -->
+                    <div class="hero-card content absolute">
+                        <div>
+                            <h1 class="h1">Welcome to Good<span class="substring">Lyfe</span> Gyms</h1>
+                        </div>
+                        <a href="#" class="button">See the benefits</a>
+                    </div>
+                </div>
+        </div>
+    </main>
 </div>
 </body>
 </html>
