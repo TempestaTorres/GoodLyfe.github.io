@@ -71,6 +71,20 @@ a, button {
     flex-direction: column;
     align-items: center;
 }
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.app-content {
+    flex: 1 0 auto;
+}
+.app-header, .app-footer {
+    flex-shrink: 0;
+}
+.line-length-sm {
+    max-width: 50ch;
+}
 .shop-cart {
     display: flex;
     align-items: center;
@@ -447,6 +461,11 @@ a, button {
 .mb-1 {
     margin-bottom: .25rem;
 }
+/*6px*/
+.mb-1x {
+    margin-bottom: 0.375rem;
+}
+
 /*8px*/
 .mb-2 {
     margin-bottom: .5rem;
@@ -821,7 +840,10 @@ a, button {
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
-
+.padding-y-md {
+    padding-top: calc(1em * 1) !important;
+    padding-bottom: calc(1em * 1) !important;
+}
 .py-3 {
     padding-top: .75rem;
     padding-bottom: .75rem;

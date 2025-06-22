@@ -50,7 +50,8 @@
                                 </svg>
                             </a>
                             <a href="#" id="logout-item">
-                                <svg class="bracket bracket-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <svg class="bracket bracket-out" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 512 512">
                                     <!--! Font Awesome Pro 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                     <path d="M352 146.2L462 256 352 365.8l0-53.8c0-13.3-10.7-24-24-24l-120 0 0-64 120 0c13.3 0 24-10.7 24-24l0-53.8zM512 256c0-11.5-4.6-22.5-12.7-30.6L383.2 109.6c-8.7-8.7-20.5-13.6-32.8-13.6c-25.6 0-46.4 20.8-46.4 46.4l0 33.6-96 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0 0 33.6c0 25.6 20.8 46.4 46.4 46.4c12.3 0 24.1-4.9 32.8-13.6L499.3 286.6c8.1-8.1 12.7-19.1 12.7-30.6zM168 80c13.3 0 24-10.7 24-24s-10.7-24-24-24L88 32C39.4 32 0 71.4 0 120L0 392c0 48.6 39.4 88 88 88l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0c-22.1 0-40-17.9-40-40l0-272c0-22.1 17.9-40 40-40l80 0z"/>
                                 </svg>
@@ -122,47 +123,82 @@
     <main>
         <!--    Hero   -->
         <div class="hero is-fullheight">
-                <div class="hero-container relative mt-100 w-full">
-                    <!-- Swiper -->
-                    <div class="swiper hero-swiper w-full">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/header-slide1.webp" loading="lazy" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/fit_woman_doing_a_dumbbell_lunge_in_the_gym.jpg" loading="lazy" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/lean_woman_doing_dumbbell_row.jpg" loading="lazy" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/slim-woman-doing-suspension-training-online-in-gym.jpg" loading="lazy" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/sven-women.jpg" loading="lazy" alt="slide">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./dist/assets/images/sven-woman-squoting.jpg" loading="lazy" alt="slide">
-                            </div>
+            <div class="hero-container relative mt-100 w-full">
+                <!-- Swiper -->
+                <div class="swiper hero-swiper w-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/header-slide1.webp" loading="lazy" alt="slide">
                         </div>
-                        <div class="swiper-pagination"></div>
-<!--                        <div class="swiper-button-prev"></div>-->
-<!--                        <div class="swiper-button-next"></div>-->
-                    </div>
-                    <div class="img img-bottom">
-                        <svg width="1440" height="35" viewBox="0 0 1440 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0" fill="white" />
-                        </svg>
-                    </div>
-                    <!--  Hero Banner Card   -->
-                    <div class="hero-card content absolute">
-                        <div>
-                            <h1 class="h1">Welcome to Good<span class="substring">Lyfe</span> Gyms</h1>
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/fit_woman_doing_a_dumbbell_lunge_in_the_gym.jpg"
+                                 loading="lazy" alt="slide">
                         </div>
-                        <a href="#" class="button">See the benefits</a>
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/lean_woman_doing_dumbbell_row.jpg" loading="lazy"
+                                 alt="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/slim-woman-doing-suspension-training-online-in-gym.jpg"
+                                 loading="lazy" alt="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/sven-women.jpg" loading="lazy" alt="slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./dist/assets/images/sven-woman-squoting.jpg" loading="lazy" alt="slide">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!--                        <div class="swiper-button-prev"></div>-->
+                    <!--                        <div class="swiper-button-next"></div>-->
+                </div>
+                <div class="img img-bottom">
+                    <svg width="1440" height="35" viewBox="0 0 1440 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 14.0112C0 14.0112 412.629 -12.7579 720 14.0112C1027.37 40.7803 1440 0.558594 1440 0.558594V34.5586H0"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <!--  Hero Banner Card   -->
+                <div class="hero-card content absolute">
+                    <div>
+                        <h1 class="h1">Welcome to Good<span class="substring">Lyfe</span> Gyms</h1>
+                    </div>
+                    <a href="#" class="button">See the benefits</a>
+                </div>
+            </div>
+        </div>
+        <!--   Section FAQ   -->
+        <section class="section py-24">
+            <div class="container">
+                <div class="faq-container flex items-center space-between">
+                    <!--    FAQ Images   -->
+                    <div class="img-group flex">
+                        <div class="img-item">
+                            <img class="img-item-top" src="./dist/assets/images/result-img-top.webp" alt="img one">
+                        </div>
+                        <div class="img-item">
+                            <img class="img-item-bottom" src="./dist/assets/images/female%20doing%20situps.png"
+                                 alt="img two">
+                        </div>
+                    </div>
+                    <!--   FAQ Card   -->
+                    <div class="faq-card">
+                        <div class="faq-title mb-1x">
+                            <h2 class="h4">Meet your new body</h2>
+                        </div>
+                        <div class="faq-card-body">
+                            <p class="subtext-dark mb-7">
+                                GoodLyfe is a fun place to train, and you don’t need to be an athlete
+                                to be able to participate! Our coaches will lead you, provide guidance, and modify your
+                                daily workouts so they’re suitable for you!
+                            </p>
+                            <a class="button light default" href="#">View the FAQ</a>
+                        </div>
                     </div>
                 </div>
-        </div>
+            </div>
+        </section>
     </main>
 </div>
 </body>

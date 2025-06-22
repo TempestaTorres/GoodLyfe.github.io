@@ -91,3 +91,21 @@
 .hero-card div:first-child {
     height: 10.75rem; /*172px;*/
 }
+/* Section FAQ */
+.faq-container {
+    padding: 0 7.75rem 0 7.75rem;
+}
+.img-group .img-item:last-child {
+    margin-left: -147px;
+}
+.img-item-top {
+    width: 347px;
+    height: 399px;
+}
+.img-item-bottom {
+    width: 241px;
+    padding-top: 144px;
+}
+.faq-card-body {
+    max-width: 540px;
+}

@@ -79,6 +79,7 @@
 .h4 {
     font-size: 2.5rem; /* 40px */
     line-height: 3.75rem;
+    color: var(--color-premium);
 }
 .h5 {
     font-family: var(--font-primary-semibold), 'sans-serif';
@@ -152,7 +153,12 @@
     transition: all 0.3s linear;
     border-radius: 2.5rem; /*20px*/
 }
-
+.button.light.default {
+    width: var(--btn-width);
+    height: var(--btn-height);
+    border: 2px solid var(--color-premium);
+    border-radius: 2.375rem; /*38px;*/
+}
 .button.light:hover {
     background-color: var(--color-hover-href);
     color: var(--color-primary);
@@ -163,4 +169,7 @@
 }
 button.button {
     padding: 0;
+}
+.section {
+    background-color: var(--bg-section);
 }
