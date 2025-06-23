@@ -121,6 +121,9 @@ a, button {
     z-index: 1;
     margin: 0 auto;
 }
+.img.img-bottom.default {
+    bottom: 25px;
+}
 .hero {
     --hero-body-padding: 3rem 1.5rem;
     --hero-body-padding-tablet: 3rem 3rem;
@@ -866,6 +869,11 @@ a, button {
     padding-top: 1.563rem;
     padding-bottom: 1.563rem;
 }
+/* 26px */
+.py-6xx {
+    padding-top: 1.625rem;
+    padding-bottom: 1.625rem;
+}
 /* 30px */
 .py-7 {
     padding-top: 1.875rem;
@@ -912,6 +920,7 @@ a, button {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
 }
+/*96px*/
 .py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;

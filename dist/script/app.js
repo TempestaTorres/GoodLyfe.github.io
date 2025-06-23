@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburgerHandler();
 
     // Hero slider
-    const swiper = new Swiper(".hero-swiper", {
+    const Heroswiper = new Swiper(".hero-swiper", {
         loop: true,
         speed: 1000,
         effect: "fade",
@@ -80,9 +80,21 @@ document.addEventListener("DOMContentLoaded", () => {
         },
          */
     });
+    // Main slider
+    const Mainswiper = new Swiper(".main-swiper", {
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        lazy: true,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+            clickable: true,
+        },
+    });
 
     let timerId = setInterval( () => {
-        swiper.slideNext();
+        Heroswiper.slideNext();
     }, 4000)
 
     window.addEventListener("scroll", (e) => {

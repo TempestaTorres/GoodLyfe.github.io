@@ -131,7 +131,7 @@
     line-height: 2.313rem; /*37px*/
     text-align: center;
     color: var(--color-primary);
-    border-radius: 2.5rem; /*20px*/
+    border-radius: 2.375rem; /*38px*/
     background-color: var(--bg-btn-primary);
     transition: 0.3s;
 }
@@ -151,7 +151,7 @@
     color: var(--color-premium);
     background-color: #fff;
     transition: all 0.3s linear;
-    border-radius: 2.5rem; /*20px*/
+    border-radius: 2.125rem; /*34px*/
 }
 .button.light.default {
     width: var(--btn-width);
