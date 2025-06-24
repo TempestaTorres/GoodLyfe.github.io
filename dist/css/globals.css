@@ -61,6 +61,9 @@
 .bg-premium {
     background-color: var(--color-premium);
 }
+.bg-secondary {
+    background-color: var(--bg-footers);
+}
 .h1, .h2, .h4 {
     font-family: var(--font-primary-bold), 'sans-serif';
     font-size: 4.375rem; /*70px*/

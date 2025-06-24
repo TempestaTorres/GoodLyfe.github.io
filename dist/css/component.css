@@ -598,6 +598,9 @@ a, button {
 .gap-20 {
     gap: 5rem;
 }
+.gap-93 {
+    gap: 5.813rem;
+}
 /* 115px */
 .gap-30 {
     gap: 7.188rem;
@@ -810,10 +813,11 @@ a, button {
     padding-top: 3.125rem;
 }
 /* 60px */
-.pt-13 {
+.pt-60 {
     padding-top: 3.75rem;
 }
-.pt-16 {
+/*64px*/
+.pt-64 {
     padding-top: 4rem;
 }
 /* 88px */
@@ -852,6 +856,9 @@ a, button {
 }
 .pb-55 {
     padding-bottom: 3.438rem;
+}
+.pb-70 {
+    padding-bottom: 4.375rem;
 }
 .pb-80 {
     padding-bottom: 5rem;
