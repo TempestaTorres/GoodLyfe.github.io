@@ -46,6 +46,7 @@
     --font-secondary-medium: 'ManropeMedium';
     --font-secondary-semibold: 'ManropeSemiBold';
     --font-subtitle: 'OpenSansSemiBold';
+    --font-quote: 'Times';
     --btn-width: 14.813rem; /*237px*/
     --btn-height: 4.25rem; /*68px*/
 }
@@ -113,6 +114,25 @@
     font-size: 1.125rem; /*18px*/
     line-height: 2rem;
     color: var(--color-gray);
+}
+.text-default {
+    color: var(--color-primary);
+}
+.text-stories-title {
+    font-family: var(--font-primary-semibold), 'sans-serif';
+    font-size: 1.125rem; /*18px*/
+    line-height: 2.125rem; /*34px*/
+    color: var(--color-gray);
+}
+.text-subtle {
+    font-size: 0.875rem; /*14px*/
+    color: var(--color-subtle);
+}
+.text-semitransparent {
+    color: rgba(255, 255, 255, 0.6);
+}
+span.block {
+    display: block;
 }
 .text-red {
     --text-opacity: 1;

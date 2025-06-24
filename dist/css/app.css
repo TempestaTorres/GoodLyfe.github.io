@@ -92,22 +92,47 @@
     height: 10.75rem; /*172px;*/
 }
 /* Section FAQ */
-.faq-container {
+.basic-container {
     padding: 0 7.75rem 0 7.75rem;
 }
 .img-group .img-item:last-child {
     margin-left: -147px;
 }
+.img-group-md .img-item:last-child {
+    margin-left: -272px;
+}
 .img-item-top {
     width: 347px;
     height: 399px;
+}
+.img-item-top-md {
+    width: 444px;
+    height: 296px;
 }
 .img-item-bottom {
     width: 241px;
     padding-top: 144px;
 }
-.faq-card-body {
+.img-item-bottom-md {
+    width: 422px;
+    padding-top: 154px;
+}
+.img.img-bottom {
+    height: auto;
+    top: auto;
+    left: 0;
+    bottom: -1px;
+    z-index: 1;
+    margin: 0 auto;
+}
+.img.img-bottom.default {
+    bottom: 25px;
+}
+.base-card-body {
     max-width: 540px;
+}
+.base-card-body-md {
+    max-width: 490px;
 }
 /* Section slider */
 .section-card {
@@ -120,4 +145,64 @@
     max-width: 50%;
     text-align: center;
     margin-bottom: 1.25rem;/*20px;*/
+}
+/* Section stories*/
+.stories {
+    background-image: linear-gradient(to top, #f4e3e9 0%, rgb(255, 255, 255) 100%);
+}
+/* Stories */
+.stories-title {
+    max-width: 464px;
+    padding-right: 2.063rem;
+}
+.card-wrapper {
+    display: flex;
+}
+.card-wrapper.end {
+    justify-content: flex-end;
+}
+.stories-card {
+    padding: 2.188rem 1.688rem 2.375rem 1.688rem;
+    border-radius: 10px;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.18);
+    background: #fff;
+    /*max-width: 350px;*/
+}
+.quote {
+    float: left;
+    font-family: var(--font-quote), 'sans-serif';
+    font-size: 3.625rem;
+    line-height: 1;
+    color: var(--color-qoute);
+}
+.stories-card-text {
+    padding-top: .75rem;
+    padding-left: 2.5rem;
+}
+.stories-card-footer {
+    padding-left: 2.5rem;
+}
+.card-avatar {
+    width: 59px;
+    height: 57px;
+    margin-right: 1.125rem;
+    & img {
+        border-radius: 50%;
+    }
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2.063rem; /*33px*/
+    padding-top: 2.5rem; /*40px*/
+}
+/* App Store*/
+.group-img-top {
+    margin-top: -140px;
+}
+.group-img-bottom {
+    margin-bottom: -83px;
+}
+.app-link:hover {
+    box-shadow: 0px 5px 9px 1px rgba(130, 19, 40, 0.5);
 }
