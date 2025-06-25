@@ -17,6 +17,7 @@
     --color-outline: #FFDAE7;
     --color-qoute: #f8c5d7;
     --color-subtle: #969bab;
+    --color-footer: #d9dbe1;
     --bg-primary: #feebf0;
     --bg-header: #E43071;
     --bg-section: #fff;
@@ -28,6 +29,7 @@
     --bg-hvr-light-dark: rgb(213, 164, 174);
     --bg-hvr-light-dask: rgb(197, 105, 124);
     --bg-footers: #fee3ea;
+    --bg-app-footer:  #0b0d17;
 }
 .green {
     --color-premium: green;

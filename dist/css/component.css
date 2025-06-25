@@ -54,6 +54,13 @@ a, button {
     transition-property: background-color, border-color, color;
     transition-timing-function: var(--c-easing);
 }
+
+a.block {
+    display: block;
+}
+span.block {
+    display: block;
+}
 .container {
     max-width: calc(var(--max-width) + 2rem);
     margin: 0 auto;
@@ -177,6 +184,15 @@ a, button {
 .hero.is-halfheight .hero-body > .container, .hero.is-fullheight .hero-body > .container {
     flex-grow: 1;
     flex-shrink: 1;
+}
+/*span*/
+.separator-v {
+    --sp-border: #d9dbe1;
+    --sp-width: 0.063rem;
+    display: block;
+    width: var(--sp-width);
+    height: 1lh;
+    border-right: var(--sp-width) solid var(--sp-border);
 }
 .min-h-screen {
     min-height: 100vh;
@@ -315,58 +331,58 @@ a, button {
 .resize-none {
     resize: none;
 }
-.space-y-1-5 > :not([hidden]) ~ :not([hidden]) {
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(.375rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(.375rem * var(--tw-space-y-reverse));
 }
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(.5rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(.5rem * var(--space-y-reverse));
 }
 /* 12px */
-.space-y-2-x > :not([hidden]) ~ :not([hidden]) {
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(.75rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(.75rem * var(--space-y-reverse));
 }
 /* margins 15px */
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+.space-y-15 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(.938rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(.938rem * var(--space-y-reverse));
 }
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-16 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(1rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(1rem * var(--space-y-reverse));
 }
 /* 20px */
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+.space-y-20 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--space-y-reverse));
 }
 /* 24px */
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--space-y-reverse));
 }
 /* 30px */
-.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+.space-y-30 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(1.875rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--space-y-reverse));
 }
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+.space-y-32 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(2rem * var(--space-y-reverse));
 }
 /* 48px */
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+.space-y-48 > :not([hidden]) ~ :not([hidden]) {
     --space-y-reverse: 0;
     margin-top: calc(3rem * calc(1 - var(--space-y-reverse)));
     margin-bottom: calc(3rem * var(--space-y-reverse));
@@ -521,6 +537,10 @@ a, button {
 .gap-2 {
     gap: .5rem;
 }
+/*9px*/
+.gap-9 {
+    gap: 0.563rem;
+}
 /*12px*/
 .gap-3 {
     gap: .75rem;
@@ -558,7 +578,8 @@ a, button {
 .gap-8 {
     gap: 2rem;
 }
-.gap-9 {
+/*36px*/
+.gap-36 {
     gap: 2.25rem;
 }
 /* 38px */
@@ -566,7 +587,7 @@ a, button {
     gap: 2.375rem;
 }
 /* 40px */
-.gap-10 {
+.gap-40 {
     gap: 2.5rem;
 }
 .gap-11 {
@@ -608,7 +629,7 @@ a, button {
 .w-full {
     width: 100%;
 }
-.size-4 {
+.size-16 {
     width: 1rem;
     height: 1rem;
 }
@@ -824,6 +845,9 @@ a, button {
 .pt-88 {
     padding-top: 5.5rem;
 }
+.pt-96 {
+    padding-top: 6rem;
+}
 /* 100px */
 .pt-100 {
     padding-top: 6.25rem;
@@ -899,7 +923,7 @@ a, button {
     padding-bottom: 1.25rem;
 }
 /* 24px */
-.py-6 {
+.py-24 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -960,7 +984,7 @@ a, button {
     padding-bottom: 5.5rem;
 }
 /*96px*/
-.py-24 {
+.py-96 {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }

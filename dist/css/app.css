@@ -213,3 +213,32 @@
     background-color: #fff;
     border-radius: 50%;
 }
+.social-link:hover {
+    background-color: var(--color-premium);
+    & svg path {
+        fill: var(--color-primary);
+    }
+}
+/* Footer */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1.5rem);
+    gap: 1rem;
+}
+.social-link-item:hover {
+    background-color: var(--color-premium);
+}
+.footer-menu-item:hover {
+    color: var(--color-hover-href);
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+.column-item {
+    cursor: pointer;
+}
+.column-item:hover .icon svg path {
+    fill: var(--color-hover-href);
+}
