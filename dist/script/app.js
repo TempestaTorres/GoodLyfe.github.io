@@ -7,6 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const menu = document.querySelector(".menu");
     const headerSearch = document.querySelector(".header-search");
     const formLogin = document.querySelector("#form-login");
+    const backToTop = document.querySelector(".back-to-top");
+
+    let headerVisible = false;
+    let topVisible = false;
+
 
     const searchButton = (e) => {
         e.preventDefault();
@@ -95,9 +100,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let timerId = setInterval( () => {
         Heroswiper.slideNext();
+        Mainswiper.slideNext();
     }, 4000)
 
-    window.addEventListener("scroll", (e) => {
+    const backToTopObserver = () => {
+        if (window.scrollY > 500 && !topVisible) {
+            backToTop.classList.add("active");
+            topVisible = true;
+        }
+        else if (window.scrollY <= 500 && topVisible) {
+            backToTop.classList.remove("active");
+            topVisible = false;
+        }
+    };
 
+    function headerObserver(e) {
+
+        if (window.scrollY > 0 && !headerVisible) {
+            header.classList.add('is-active');
+            headerVisible = true;
+        }
+        else if (window.scrollY === 0 && headerVisible) {
+            header.classList.remove('is-active');
+            headerVisible = false;
+        }
+    }
+    window.addEventListener("scroll", (e) => {
+        headerObserver();
+        backToTopObserver();
+        setObserver('.slide-up', 'is-active');
     });
+    //  Toggle Button
+    toggleTheme();
 });

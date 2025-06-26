@@ -213,3 +213,7 @@ button.button {
 .section {
     background-color: var(--bg-section);
 }
+.header.is-active {
+    background-color: var(--bg-header);
+    backdrop-filter: blur(12px);
+}

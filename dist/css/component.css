@@ -167,6 +167,12 @@ span.block {
 .hero.is-small .hero-body {
     padding: var(--hero-body-padding-small);
 }
+/* 1200 - 1439px;*/
+@media screen and (max-width: 1439px) {
+    .hero.is-fullheight {
+        min-height: 50vh;
+    }
+}
 @media screen and (min-width: 769px), print {
     .hero.is-medium .hero-body {
         padding: var(--hero-body-padding-medium);
@@ -933,9 +939,14 @@ span.block {
     padding-bottom: 1.563rem;
 }
 /* 26px */
-.py-6xx {
+.py-26 {
     padding-top: 1.625rem;
     padding-bottom: 1.625rem;
+}
+/* 28px */
+.py-28 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
 }
 /* 30px */
 .py-7 {
@@ -983,6 +994,11 @@ span.block {
     padding-top: 5.5rem;
     padding-bottom: 5.5rem;
 }
+/* 94px */
+.py-94 {
+    padding-top: 5.875rem;
+    padding-bottom: 5.875rem;
+}
 /*96px*/
 .py-96 {
     padding-top: 6rem;
@@ -998,7 +1014,7 @@ span.block {
     padding-bottom: 7.5rem;
 }
 /* 180px */
-.py-31 {
+.py-180 {
     padding-top: 11.25rem;
     padding-bottom: 11.25rem;
 }

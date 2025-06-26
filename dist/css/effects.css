@@ -55,8 +55,8 @@
    opacity: 0;
 }
 .slide-up {
-   transition: all .5s ease-in-out;
-   transform: translate3d(0, 30px, 0);
+   transition: all .9s ease-in-out;
+   transform: translate3d(0, 4rem, 0);
    opacity: 0;
 }
 
@@ -66,11 +66,9 @@ section:has(.slide-right-active) {
         opacity: 1;
     }
 }
-section:has(.slide-up-active) {
-    .slide-up.slide-up-active {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-    }
+.slide-up.is-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
 }
 /* Pulsing effect */
 @keyframes playShadow {

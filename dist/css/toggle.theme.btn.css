@@ -1,0 +1,49 @@
+/*
+<div class="toggle-theme-btn">
+   <span class="toggle-btn"></span>
+</div>
+*/
+.toggle-theme-btn {
+    --tg-theme-btn-width: 3.75rem;
+    --tg-theme-btn-height: 1.5rem;
+    --tg-btn-border-color: #858585;
+    --tg-btn-border-width: 1px;
+    --tg-theme-btn-border-radius: 0.9375rem;
+    --tg-theme-btn-bg: #ededed;
+    --tg-theme-btn-padding: 0.125rem; /*2px*/
+    --tg-pos-x: 0.5rem;
+    --tg-pos-y: 15%;
+    --tg-btn-default-theme: #f93d6b;
+    --tg-btn-new-theme: #26d68a;
+    --tg-btn-width: calc(var(--tg-theme-btn-height) - (var(--tg-theme-btn-padding) * 2 + var(--tg-btn-border-width)));
+    --tg-btn-offset: calc(var(--tg-theme-btn-width) - var(--tg-theme-btn-padding) * 2 - var(--tg-btn-width) - var(--tg-btn-border-width) * 2);
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--tg-theme-btn-padding);
+    top: var(--tg-pos-y);
+    right: var(--tg-pos-x);
+    z-index: 10;
+    width: var(--tg-theme-btn-width);
+    height: var(--tg-theme-btn-height);
+    border: var(--tg-btn-border-width) solid var(--tg-btn-border-color);
+    border-radius: var(--tg-theme-btn-border-radius);
+    background-color: var(--tg-theme-btn-bg);
+}
+.toggle-btn {
+    display: block;
+    width: var(--tg-btn-width);
+    height: var(--tg-btn-width);
+    border-radius: 50%;
+    background-color: var(--tg-btn-default-theme);
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .5s;
+}
+.toggle-btn.toggled {
+    transform: translate3d(var(--tg-btn-offset), 0, 0);
+    background-color: var(--tg-btn-new-theme);
+}

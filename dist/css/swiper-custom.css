@@ -2,7 +2,7 @@
 
 .swiper {
     --swiper-navigation-sides-offset: 2rem;
-    --sw-height: 44rem;
+    --sw-height: 44rem; /*704*/
     --swiper-pagination-bullet-width: 12px;
     --swiper-pagination-bullet-height: 12px;
     --swiper-pagination-bullet-inactive-color: var(--bg-primary);
@@ -10,7 +10,7 @@
     --swiper-pagination-bullet-inactive-opacity: 1;
     --swiper-navigation-size: 44px;
     --swiper-navigation-color: var(--bg-primary);
-    --swiper-pagination-bottom: 80px;
+    --swiper-pagination-bottom: 5rem; /*80px*/;
 
     height: var(--sw-height, 100%);
 }
@@ -32,6 +32,20 @@
 /* 1200 - 1439px;*/
 @media screen and (max-width: 1439px) {
     .swiper {
-        --sw-height: 504px;
+        --sw-height: 31.5rem;/* 504px;*/
+        --swiper-pagination-bottom: 3.125rem;/*50px;*/
+    }
+}
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+    .swiper {
+        --sw-height: 19rem;/* 204px;*/
+        --swiper-pagination-bottom: 0.875rem;/*14px;*/
+        --swiper-pagination-bullet-width: 8px;
+        --swiper-pagination-bullet-height: 8px;
+    }
+    .swiper-pagination-bullet-active {
+        --swiper-pagination-bullet-width: 12px;
+        --swiper-pagination-bullet-height: 12px;
     }
 }

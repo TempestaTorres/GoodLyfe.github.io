@@ -9,6 +9,20 @@
     .menu-group {
         gap: 1.25rem; /*20px;*/
     }
+    .base-card-body {
+        max-width: 26.875rem;/*430px;*/
+    }
+    .base-card-body-md {
+        max-width: 26.875rem;
+    }
+    .img-item-top-md {
+        width: 21.5rem;/*344px;*/
+        height: 18.5rem;/*296px;*/
+    }
+    .img-item-bottom-md {
+        width: 20.125rem;/*322px;*/
+        height: 24.75rem;/*396px;*/
+    }
 }
 /* 1024 - 1199 */
 @media screen and (max-width: 1199px) {
@@ -21,6 +35,38 @@
     }
     .menu-group {
         gap: 1rem; /*16px;*/
+    }
+    .hero-card {
+        max-width: 60%;
+        left: 20%;
+    }
+    .basic-container {
+        flex-direction: column;
+    }
+    .basic-container.reverse {
+        flex-direction: column-reverse;
+    }
+    .faq-card, .facilities-card {
+        margin-bottom: 2.5rem;
+    }
+    .facilities-title {
+        text-align: center;
+    }
+    .base-card-body, .base-card-body-md {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-wrap: balance;
+    }
+    .app-card-title {
+        text-align: center;
+    }
+    .pt-198 {
+        padding-top: 6.75rem;
+    }
+    .stories {
+        padding-top: 0;
     }
 }
 /* 768 - 1023 */
@@ -41,7 +87,7 @@
         bottom: 0;
         background-color: #111;
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 80px;
+        padding-top: 5rem;
         transition: 0.5s;
     }
     .list-links {
@@ -57,6 +103,34 @@
     #login-item {
         display: flex;
     }
+
+    .hero-card {
+        max-width: 80%;
+        left: 10%;
+    }
+    .basic-container {
+        padding: 0 1.5rem 0 1.5rem;
+    }
+    .section-card {
+        top: 15%;
+    }
+    .section-card-title {
+        max-width: 80%;
+        text-align: center;
+    }
+    .section-card-subtitle {
+        max-width: 80%;
+    }
+    .app-store {
+        gap: 2rem;
+    }
+    .app-section {
+        padding-top: 5.5rem;
+        padding-bottom: 1.875rem;
+    }
+    .app-store-img-group {
+        gap: 1rem;
+    }
 }
 /* 425 - 767 */
 @media screen and (max-width: 767px) {
@@ -71,6 +145,66 @@
         padding-top: 0.125rem;
         padding-bottom: 0.125rem;/*2px*/
     }
+    .hero-card {
+        top: 10%;
+    }
+    .h1 {
+        font-size: 3.125rem;/*50px;*/
+        line-height: 3.563rem;
+    }
+    .button {
+        width: 12.5rem;
+        height: 3.625rem;
+    }
+    .faq-title {
+        text-align: center;
+    }
+
+    .img-item-top {
+        width: 18.75rem;/*300px;*/
+        height: 17.75rem;/*284px;*/
+    }
+    .img-item-bottom {
+        width: 15rem;/*241px;*/
+        padding-top: 2.5rem;/*40px;*/
+    }
+    .img-group .img-item:last-child {
+        margin-left: -6.25rem;
+    }
+    .h2, .h3, .h4 {
+        font-size: 2.375rem;
+        line-height: 3rem;
+    }
+    .subtext {
+        line-height: 1.75rem;
+    }
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+    .group-img-top {
+        margin-top: 0;
+    }
+
+    .stories-title {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .group-img-bottom {
+        display: none;
+    }
+    .social-list {
+        gap: 1.438rem;
+    }
+    .social-link {
+        width: 5rem;
+        height: 5rem;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
 }
 /* 375 - 424 */
 @media screen and (max-width: 424px) {
@@ -83,6 +217,9 @@
     #search {
         padding: 0.625rem; /*10px*/;
     }
+    .sub-footer-list {
+        flex-wrap: wrap;
+    }
 }
 /* 320-374 */
 @media screen and (max-width: 374px) {
@@ -94,5 +231,35 @@
     }
     .menu-group {
         gap: 8.25rem;/*132px;*/
+    }
+    .hero-container {
+        margin-top: 9.25rem;
+    }
+    .img-item-top {
+        height: 13.75rem;
+    }
+    .section-card-title {
+        max-width: 100%;
+    }
+    .h1 {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
+    .img-group-md {
+        flex-wrap: wrap;
+    }
+    .img-group-md .img-item:last-child {
+        margin-left: 0;
+    }
+    .img-item-bottom-md {
+        width: 100%;
+        padding-top: 0;
+        height: auto;
+    }
+    .app-store {
+        gap:1rem;
+    }
+    .menu-grid {
+        grid-template-columns: 1fr;
     }
 }
